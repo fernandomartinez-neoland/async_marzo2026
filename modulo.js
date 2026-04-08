@@ -2,6 +2,7 @@ import { contador, alerta } from "./contador.js";
 import { promesa } from "./promesa.js";
 import { asincrono } from "./async.js";
 import { trycatch } from "./trycatch.js"
+import { pokeApi } from "./pokeapi.js";
 
 const async = document.getElementById("async")
 contador()
@@ -55,3 +56,8 @@ async function lectura_trycatch(){
 
 
 lectura_trycatch();
+
+
+
+
+pokeApi();
