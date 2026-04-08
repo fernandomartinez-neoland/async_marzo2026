@@ -8,7 +8,7 @@ contador()
 // las promesas no se leen directamente llamando a la funcion, ya que este daria una respuesta compleja que no es lo que buscamos
 
 
- promesa(true)
+ promesa(false)
 .then((response)=>{//con la promesa usamos el then para controlar las respuestas correctas y poder hacer uso de ellas segun lo que nos plazca
     // el then funciona con una funcion de flecha que se encarga de leer las respuestas para luego poder hacer con eso lo que queramos
     async.textContent=response
@@ -18,6 +18,9 @@ contador()
     // el .catch se encarga de leer los errores para asi poder controlarlo y hacer lo que necesitemos con dicho error
     async.textContent=e
     console.log(e)
+})
+.finally(()=>{
+    console.log("finalmente")
 })
 ;
 
